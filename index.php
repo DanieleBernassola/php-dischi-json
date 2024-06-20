@@ -25,6 +25,7 @@
       <div class="container">
         <h1>Dischi</h1>
         <div class="row">
+          <!-- COLONNA CANZONI -->
           <div class="col-4" v-for="song in songs">
             <div class="content">
               <h2>{{ song.title }}</h2>

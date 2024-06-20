@@ -16,20 +16,21 @@
 <body>
   <div id="app">
     <!-- HEADER -->
-    <header>
-      logo
-    </header>
+    <div class="container-full">
+      <header>
+        <img src="./img/logo.jpg" alt="logo">
+      </header>
+    </div>
 
     <!-- MAIN -->
     <main>
       <div class="container">
-        <h1>Dischi</h1>
         <div class="row">
           <!-- COLONNA CANZONI -->
-          <div class="col-4" v-for="song in songs">
+          <div class="col-4 text-center" v-for="song in songs">
             <div class="content">
               <h2>{{ song.title }}</h2>
-              <p>{{ song.artist }}</p>
+              <p class="artist">{{ song.artist }}</p>
               <h3>{{ song.year }}</h3>
             </div>
           </div>

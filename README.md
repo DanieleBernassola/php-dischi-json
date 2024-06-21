@@ -16,3 +16,11 @@ Solo a questo punto sarà utile passare alla lettura della lista da un file JSON
 Bonus
 
 Al click su un disco, recuperare e mostrare i dati del disco selezionato.
+
+<!-- PARTE 2 -->
+
+Provate ad aggiungere un disco al vostro file json e visualizzarlo di conseguenza.
+
+Bonus
+
+Provate a cancellare un disco dal vostro archivio

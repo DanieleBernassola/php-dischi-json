@@ -18,7 +18,7 @@
     <!-- HEADER -->
     <div class="container-full">
       <header>
-        <img src="./img/logo.jpg" alt="logo">
+        <img src="./img/logo.png" alt="logo">
       </header>
     </div>
 
@@ -29,6 +29,7 @@
           <!-- COLONNA CANZONI -->
           <div class="col-4 text-center" v-for="song in songs">
             <div class="content">
+              <img :src="song.img" :alt="song.title">
               <h2>{{ song.title }}</h2>
               <p class="artist">{{ song.artist }}</p>
               <h3>{{ song.year }}</h3>

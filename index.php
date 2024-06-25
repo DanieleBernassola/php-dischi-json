@@ -35,6 +35,15 @@
               <h3>{{ song.year }}</h3>
             </div>
           </div>
+
+          <h3>Add songs</h3>
+          <form action="" @submit.prevent="addSong">
+            <div class="mb-3">
+              <label for="text-song" class="form-label">Song name</label>
+              <input type="text" class="form-control" id="text-song" :v-model="addSong">
+            </div>
+            <button class="btn btn-primary btn-sm">Add a song</button>
+          </form>
         </div>
       </div>
     </main>

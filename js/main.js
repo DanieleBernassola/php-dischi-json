@@ -5,6 +5,7 @@ createApp({
     return {
       urlSongs: "http://localhost/php-dischi-json/api.php",
       songs: [],
+      newSong: "",
       // songs: [
       //   {
       //     title: "New Jersey",
@@ -45,6 +46,18 @@ createApp({
       axios.get(this.urlSongs).then((response) => {
         this.songs = response.data;
       });
+    },
+    addSong() {
+      console.log("nuova canzone");
+      const data = {
+        text: this.newSong,
+        action: "create",
+      };
+      axios
+        .post("http://localhost/php-dischi-json/data.json", data, {
+          headers: { "Content-Type": "multipart/form-data" },
+        })
+        .then((response) => (this.songs = response.data));
     },
   },
   created() {
